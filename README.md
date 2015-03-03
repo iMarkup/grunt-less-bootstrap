@@ -7,6 +7,6 @@ grunt + less + bootstrap
 'less\bootstrap\bootstrap-custom.less' — file for custom Bootstrap-variables.
 
 1. download and unzip this config
-2. run `npm install`
-3. for start run `grunt`
-4. for end run `grunt dist`
+2. Launch 'npm install'
+3. Before starting to work on the project, 'run grunt'
+4. To finalize the project, run 'grunt dist'
