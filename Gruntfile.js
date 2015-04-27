@@ -244,11 +244,11 @@ var PathConfig = require('./grunt-settings.js');
     browserSync: {
       dev: {
         bsFiles: {
-          src : ['**/*.html','<%= config.cssDir %>**/*.css', '*.css']
+          src : ['*.html','<%= config.cssDir %>*.css', '*.css']
         },
         options: {
           server: {
-            baseDir: "../",
+            baseDir: "./",
             index: "index.html",
             directory: true
           },
