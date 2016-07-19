@@ -37,6 +37,7 @@ var PathConfig = require('./grunt-settings.js');
         src: ['<%= config.cssDir %>*.css', 
               '<%= config.cssMainFileDir %><%= config.cssMainFileName %>.css',
               '!<%= config.cssDir %>bootstrap.css',
+              '!<%= config.cssDir %>bootstrap-extend.css',
               '!<%= config.cssDir %>bootstrap.min.css',
               '!<%= config.cssDir %>ie.css',
               '!<%= config.cssDir %>ie8.css'
@@ -105,7 +106,8 @@ var PathConfig = require('./grunt-settings.js');
         },
         files: {
           "<%= config.cssMainFileDir %><%= config.cssMainFileName %>.css": "<%= config.lessDir %><%= config.lessMainFileName %>.less",
-          "<%= config.cssDir %>bootstrap.css": "<%= config.lessDir %>bootstrap/bootstrap.less",
+          "<%= config.cssDir %>bootstrap.css": "<%= config.lessDir %>bootstrap.less",
+          "<%= config.cssDir %>bootstrap-extended.css": "<%= config.lessDir %>bootstrap-extended.less",
         }
       },
       dist: {
@@ -115,7 +117,8 @@ var PathConfig = require('./grunt-settings.js');
         },
         files: {
           "<%= config.cssMainFileDir %><%= config.cssMainFileName %>.css": "<%= config.lessDir %><%= config.lessMainFileName %>.less",
-          "<%= config.cssDir %>bootstrap.css": "<%= config.lessDir %>bootstrap/bootstrap.less",
+          "<%= config.cssDir %>bootstrap.css": "<%= config.lessDir %>bootstrap.less",
+          "<%= config.cssDir %>bootstrap-extended.css": "<%= config.lessDir %>bootstrap-extended.less",
         }
       }
     },
